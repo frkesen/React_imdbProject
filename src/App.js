@@ -5,7 +5,7 @@ import "./App.css";
 import { SearchBox } from "./components/SearchBox";
 import { CardList } from "./components/CardList";
 
-const apiKey = "Enter your API key";
+const apiKey = "Enter API key";
 const baseUrl = "https://api.themoviedb.org/3/search/movie";
 const baseImageUrl = "https://image.tmdb.org/t/p/w500";
 
@@ -29,7 +29,10 @@ function App() {
 
   return (
     <div className="App">
-      <SearchBox setSearchKeyword={setSearchKeyword} />
+      <SearchBox
+        setSearchKeyword={setSearchKeyword}
+        placeholder="Enter a movie name..."
+      />
       <CardList movieList={movieList} baseImageUrl={baseImageUrl} />
     </div>
   );
