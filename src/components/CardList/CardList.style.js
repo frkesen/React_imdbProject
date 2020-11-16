@@ -6,4 +6,5 @@ export const StyledCardList = styled.div`
   gap: 1rem;
   justify-content: center;
   align-items: center;
+  padding: 1rem;
 `;

@@ -9,6 +9,7 @@ export const CardList = ({ movieList, baseImageUrl }) => {
           key={index}
           title={movie.title}
           imgSrc={baseImageUrl + movie.poster_path}
+          id={movie.id}
         />
       ))}
     </StyledCardList>
