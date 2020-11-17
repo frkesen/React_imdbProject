@@ -1,9 +1,17 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import { useParams } from "react-router-dom";
+import {
+  StyledDetailWrapper,
+  StyledH1,
+  StyledImage,
+  StyledOverview,
+  StyledContentWrapper,
+  StyledInfoWrapper
+} from "./MovieDetail.style";
 
 const movieDetailBaseUrl = "https://api.themoviedb.org/3/movie/";
-const apiKey = "Enter your API key";
+const apiKey = "Enter API key";
 const baseImageUrl = "https://image.tmdb.org/t/p/w500";
 
 export function MovieDetails() {
@@ -21,14 +29,19 @@ export function MovieDetails() {
       .catch()
       .finally();
   }, [id]);
-  console.log(movieDetails);
-
+  
   return (
-  <div>
-      <h1>{movieDetails?.title}</h1>
-      <img src={baseImageUrl+movieDetails?.poster_path} alt={"#"} />
-      <p>{movieDetails?.overview}</p>
-
-  </div>
-  )
+    <StyledDetailWrapper>
+      <StyledH1>{movieDetails?.title}</StyledH1>
+      <StyledContentWrapper>
+        <StyledImage src={baseImageUrl + movieDetails?.poster_path} alt={"#"} />
+        <StyledInfoWrapper>
+          <h2>Overview</h2>
+          <StyledOverview>{movieDetails?.overview}</StyledOverview>
+          <h3>{"Rate : " + movieDetails?.vote_average } </h3>
+          <h3>{"Total Vote : " + movieDetails?.vote_count } </h3>
+        </StyledInfoWrapper>
+      </StyledContentWrapper>
+    </StyledDetailWrapper>
+  );
 }

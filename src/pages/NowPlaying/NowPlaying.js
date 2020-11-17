@@ -1,41 +1,31 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
-
-import { StyledMovieWrapper } from "./Movie.style";
-import { SearchBox } from "../../components/SearchBox/SearchBox";
+import "./NowPlaying.css";
 import { CardList } from "../../components/CardList/CardList";
 
+const movieNowPlayingUrl = "https://api.themoviedb.org/3/movie/now_playing";
 const apiKey = "Enter API key";
-const baseUrl = "https://api.themoviedb.org/3/search/movie";
 const baseImageUrl = "https://image.tmdb.org/t/p/w500";
 
-function Movie() {
+export function MovieNowPlaying() {
   const [movieList, setMovieList] = useState([]);
-  const [searchKeyword, setSearchKeyword] = useState("Star Wars");
 
   useEffect(() => {
     axios
-      .get(baseUrl, {
+      .get(movieNowPlayingUrl, {
         params: {
           api_key: apiKey,
-          page: 1,
-          query: searchKeyword,
         },
       })
       .then((res) => setMovieList(res?.data?.results))
       .catch()
       .finally();
-  }, [searchKeyword]);
+  }, []);
   
+
   return (
-    <StyledMovieWrapper>
-      <SearchBox
-        setSearchKeyword={setSearchKeyword}
-        placeholder="Enter a movie name..."
-      />
+    <div className="Latest">
       <CardList movieList={movieList} baseImageUrl={baseImageUrl} />
-    </StyledMovieWrapper>
+    </div>
   );
 }
-
-export default Movie;

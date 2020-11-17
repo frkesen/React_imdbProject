@@ -25,7 +25,7 @@ export const StyledSearchInput = styled.input`
 
 export const StyledSearchBox = styled.div`
     padding: 2rem;
-    background-color: purple;
+    background-color: red;
     
     
 /*     ${StyledSearchInput} {

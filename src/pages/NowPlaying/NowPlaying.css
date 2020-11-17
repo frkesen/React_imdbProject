@@ -1,0 +1,6 @@
+.Latest {
+    text-align: center;
+    background-color: coral;
+    display: flex;
+    flex-direction: column;
+  }

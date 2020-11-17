@@ -5,6 +5,7 @@ export const StyledCardWrapper = styled.div`
   height: 15.5rem;
   border: 0.0625rem solid rgba(0, 0, 0, 0.2);
   border-radius: 5px;
+  background-color: bisque;
   box-shadow: 0.1875rem 0.125rem 0.625rem rgba(0, 0, 0, 0.1);
   display: flex;
   align-items: center;
