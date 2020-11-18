@@ -9,7 +9,6 @@ export function Navbar() {
                 <Link to="/"> HOME </Link>
             </StyledLinkLeft>
             <StyledLinkRight>
-                <Link to="/latest"> LATEST </Link>
             
                 <Link to="/now_playing"> NOW PLAYING </Link>
             

@@ -6,11 +6,13 @@ import { MovieTopRated } from "./pages/TopRated/TopRated";
 import { MovieUpcoming } from "./pages/Upcoming/Upcoming";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import { Navbar } from "./components/Navbar/Navbar"
+import { VideoSection } from "./components/VideoSection/VideoSection";
 
 const App = () => {
   return (
     <BrowserRouter>
       <Navbar />
+      <VideoSection />
       <Switch>
         <Route path="/details/:id" component={MovieDetails} exact />
         <Route path="/now_playing" component={MovieNowPlaying} exact />

@@ -11,7 +11,7 @@ import {
 } from "./MovieDetail.style";
 
 const movieDetailBaseUrl = "https://api.themoviedb.org/3/movie/";
-const apiKey = "Enter API key";
+const apiKey = "Enter your API";
 const baseImageUrl = "https://image.tmdb.org/t/p/w500";
 
 export function MovieDetails() {
