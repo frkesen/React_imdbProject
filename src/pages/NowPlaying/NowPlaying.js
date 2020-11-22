@@ -7,7 +7,7 @@ import { SearchBox } from "../../components/SearchBox/SearchBox";
 import { PaginationBar } from "../../components/Pagination/Pagination";
 
 const movieNowPlayingUrl = "https://api.themoviedb.org/3/movie/now_playing";
-const apiKey = "Enter your API";
+const apiKey = process.env.REACT_APP_TMDB_KEY;
 const baseImageUrl = "https://image.tmdb.org/t/p/w500";
 
 export function MovieNowPlaying() {

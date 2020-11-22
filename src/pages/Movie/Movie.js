@@ -6,7 +6,7 @@ import { SearchBox } from "../../components/SearchBox/SearchBox";
 import { CardList } from "../../components/CardList/CardList";
 import { PaginationBar } from "../../components/Pagination/Pagination";
 
-const apiKey = "Enter your API";
+const apiKey = process.env.REACT_APP_TMDB_KEY;
 const baseUrl = "https://api.themoviedb.org/3/search/movie";
 const baseImageUrl = "https://image.tmdb.org/t/p/w500";
 
@@ -14,7 +14,7 @@ const baseImageUrl = "https://image.tmdb.org/t/p/w500";
 
 function Movie() {
   const [movieList, setMovieList] = useState([]);
-  const [searchKeyword, setSearchKeyword] = useState("Star Wars");
+  const [searchKeyword, setSearchKeyword] = useState("day");
   const [page, setPage] = useState(1);
   const [countPage, setCountPage] = useState(1);
 
