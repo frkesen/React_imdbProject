@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/react_imdbproject/static/css/main.6e1c744a.chunk.css",
-    "main.js": "/react_imdbproject/static/js/main.a2e53ebe.chunk.js",
-    "main.js.map": "/react_imdbproject/static/js/main.a2e53ebe.chunk.js.map",
-    "runtime-main.js": "/react_imdbproject/static/js/runtime-main.d24628b3.js",
-    "runtime-main.js.map": "/react_imdbproject/static/js/runtime-main.d24628b3.js.map",
-    "static/js/2.2379ff7c.chunk.js": "/react_imdbproject/static/js/2.2379ff7c.chunk.js",
-    "static/js/2.2379ff7c.chunk.js.map": "/react_imdbproject/static/js/2.2379ff7c.chunk.js.map",
-    "static/js/3.7cc87fa8.chunk.js": "/react_imdbproject/static/js/3.7cc87fa8.chunk.js",
-    "static/js/3.7cc87fa8.chunk.js.map": "/react_imdbproject/static/js/3.7cc87fa8.chunk.js.map",
-    "index.html": "/react_imdbproject/index.html",
-    "static/css/main.6e1c744a.chunk.css.map": "/react_imdbproject/static/css/main.6e1c744a.chunk.css.map",
-    "static/js/2.2379ff7c.chunk.js.LICENSE.txt": "/react_imdbproject/static/js/2.2379ff7c.chunk.js.LICENSE.txt"
+    "main.css": "/React_imdbProject/static/css/main.6e1c744a.chunk.css",
+    "main.js": "/React_imdbProject/static/js/main.a2e53ebe.chunk.js",
+    "main.js.map": "/React_imdbProject/static/js/main.a2e53ebe.chunk.js.map",
+    "runtime-main.js": "/React_imdbProject/static/js/runtime-main.976c6f87.js",
+    "runtime-main.js.map": "/React_imdbProject/static/js/runtime-main.976c6f87.js.map",
+    "static/js/2.8b284fb3.chunk.js": "/React_imdbProject/static/js/2.8b284fb3.chunk.js",
+    "static/js/2.8b284fb3.chunk.js.map": "/React_imdbProject/static/js/2.8b284fb3.chunk.js.map",
+    "static/js/3.7cc87fa8.chunk.js": "/React_imdbProject/static/js/3.7cc87fa8.chunk.js",
+    "static/js/3.7cc87fa8.chunk.js.map": "/React_imdbProject/static/js/3.7cc87fa8.chunk.js.map",
+    "index.html": "/React_imdbProject/index.html",
+    "static/css/main.6e1c744a.chunk.css.map": "/React_imdbProject/static/css/main.6e1c744a.chunk.css.map",
+    "static/js/2.8b284fb3.chunk.js.LICENSE.txt": "/React_imdbProject/static/js/2.8b284fb3.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.d24628b3.js",
-    "static/js/2.2379ff7c.chunk.js",
+    "static/js/runtime-main.976c6f87.js",
+    "static/js/2.8b284fb3.chunk.js",
     "static/css/main.6e1c744a.chunk.css",
     "static/js/main.a2e53ebe.chunk.js"
   ]
